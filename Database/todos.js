@@ -24,3 +24,5 @@ let toDos=[
         responsible:"Elena"
     }
 ]
+
+export {toDos}

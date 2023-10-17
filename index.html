@@ -28,11 +28,21 @@
     </section>
 
     <section id="toDos">
-        <h1>My To-Do's</h1>
     </section>
 
     <section>
         <h1>Add / Edit To-Do</h1>
+        <form >
+            <input type="text" id="addEditTaskName" placeholder="task name">
+            <select name="status" id="addEditTaskStatus">
+                <option value="to-do">to-do</option>
+                <option value="in progress">in progress</option>
+                <option value="blocked">blocked</option>
+                <option value="done">done</option>
+
+            </select>
+<button id="addEditSubmit">Add</button>
+        </form>
     </section>
     <script type="module" src="main.js"></script>
 </body>

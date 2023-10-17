@@ -1,5 +1,8 @@
 import {login} from './Login/login.js'
 import {logout} from './Login/logout.js'
+import { toDos } from './Database/todos.js'
+import { renderTodos } from './Todos/renderTodos.js'
+import {addToDo} from './Todos/add.js'
 
 
 const loginButton=document.getElementById("loginSumbit")
@@ -13,7 +16,11 @@ if(isLoggedIn){
     document.getElementById("greetings").textContent='Salut '+localStorage.getItem('username')
 
 }
-
+renderTodos()
 const logoutButton=document.getElementById("logout")
 logoutButton.addEventListener('click',logout)
+
+
+const addEditSubmit=document.getElementById("addEditSubmit")
+addEditSubmit.addEventListener('click',addToDo)
 

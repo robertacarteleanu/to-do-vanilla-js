@@ -3,7 +3,7 @@ body *{
     font-family: sans-serif;
 }
 
-button, input{
+button, input, select{
     display:block;
  height:2.5rem;
  padding:7px;
@@ -15,4 +15,19 @@ button, input{
 button{
     background-color: bisque;
     font-weight: bold;
+}
+.taskName{
+    width: 300px;
+    font-weight: bold;
+    color: brown;
+    margin: 10px;
+}
+.taskStatus{
+    font-size: small;
+    margin: 10px;
+}
+.taskButtons{
+    display: inline;
+    height: 2rem;
+    size: 0.5rem;
 }
